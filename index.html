@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逃學大作戰</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 使用 Sweetalert2 來製作好看的對話框 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- 使用 GSAP 來製作動畫效果 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div id="classroom">
+            <div class="player" id="player"></div>
+            <div class="door" id="door"></div>
+            <div class="teacher" id="teacher"></div>
+            <div class="desk" id="desk1"></div>
+            <div class="desk" id="desk2"></div>
+            <div class="desk" id="desk3"></div>
+            <div class="desk" id="desk4"></div>
+        </div>
+        <div class="game-ui">
+            <div id="timer">時間: 300秒</div>
+            <div id="caught-meter">警戒值: 0%</div>
+        </div>
+    </div>
+    <div id="start-screen" class="screen">
+        <h1>逃學大作戰</h1>
+        <p>設法在不被老師發現的情況下逃出教室！</p>
+        <button id="start-btn">開始遊戲</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
